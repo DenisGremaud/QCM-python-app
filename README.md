@@ -62,4 +62,4 @@
 
 ### License
 
-Ce projet est sous licence ``MIT License`` - voir le fichier [LICENSE](LICENSE) pour plus d'informations
+Ce projet est sous licence ``GNU GPL v3`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
