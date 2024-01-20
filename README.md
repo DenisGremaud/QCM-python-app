@@ -1,4 +1,4 @@
-# app_qcm
+# QCM-python-app
 
 ## Configuration
 
