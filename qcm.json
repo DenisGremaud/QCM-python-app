@@ -70,5 +70,63 @@
 			3
 		],
 		"nb_points" : 2
+	},
+	{
+		"titre": "Security Group",
+		"question": "Un security group :",
+		"answers": [
+			"fixe les droits d'accès des utilisateurs d'une instance donnée.",
+			"est un firewall installé à l’intérieur de l’instance.",
+			"permet aux utilisateurs d’ouvrir et/ou fermer les ports de communication selon les besoins des applications installées dans l’instance."
+		],
+		"correct": [
+			1,
+			2
+		],
+		"nb_points" : 2
+	},
+	{
+		"titre": "Key pair",
+		"question": "Une key pair :",
+		"answers": [
+			"utilisé pour restreindre l’accès aux ports de communication de l'instance.",
+			"un couple (clé publique, clé privée) qui limite l'accès à l'instance. Seul le détenteur de la clé privée a la possibilité d'accéder à l'instance qui détient la clé publique correspondante",
+			"utilisé pour contrôler l’accès à l’instance."
+		],
+		"correct": [
+			1,
+			2
+		],
+		"nb_points" : 2
+	},
+	{
+		"titre": "Clé publique/Clé privée",
+		"question": "Cochez les clause(s) correctes (s) :",
+		"answers": [
+			"Le private key (clé privée) est copiée dans l’instance lors de sa création",
+			"La clé publique est créée par l’infrastructure cloud alors que la clé privée est créée par l’utilisateur",
+			"Les deux clés publique et privée sont créées par l'utilisateur. La clé privée est mise à sa disposition. La clé publique est utilisée par l'IaaS lors de la création des instances.",
+			"Le public key (clé publique) est copiée dans l’instance lors de sa création"
+		],
+		"correct": [
+			2,
+			3
+		],
+		"nb_points" : 2
+	},
+	{
+		"titre": "Standardisation",
+		"question": "Quels sont les bénéfices de la standardisation des APIs dans le cloud ?",
+		"answers": [
+			"Garantit la sécurité",
+			"Réduit la dépendance de l'utilisateur vis à vis des fournisseurs Cloud.",
+			"Garantit la portabilité.",
+			"Permet de réduire les coûts d'exécution des services cloud."
+		],
+		"correct": [
+			1,
+			2
+		],
+		"nb_points" : 2
 	}
 ]

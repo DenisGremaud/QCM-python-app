@@ -21,7 +21,7 @@
 ### Lancement
 
 1. Activer l'environnement virtuel avec la commande `source env/bin/activate`
-2. Lancer le programme avec la commande `python main.py`
+2. Lancer le programme avec la commande `python main.py [json file]`
 
 ### Informations
 
@@ -59,4 +59,4 @@
 
 ### License
 
-Ce projet est sous licence ``GNU GPL v3`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
+Ce projet est sous licence ``GNU GPL v3`` - voir le fichier [LICENSE.md](LICENSE) pour plus d'informations

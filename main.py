@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 import json
 import textwrap
+import sys
 
 def create_question_window(titre, question, answers, nb_points_by_question):
     layout = [
@@ -94,6 +95,15 @@ def game(questions):
             window.close()
 
 if __name__ == "__main__":
-    questions = json.load(open("qcm.json"))
-    sg.theme('DarkAmber')
-    game(questions)
+    # make help
+    if sys.argv[1] == "-h" or sys.argv[1] == "--help":
+        print("Usage: python main.py [json file]")
+        exit()
+    # check if json file is provided
+    if len(sys.argv) < 2:
+        print("Please provide a json file as argument")
+        exit()
+    else:
+        questions = json.load(open("qcm.json"))
+        sg.theme('DarkGrey14')
+        game(questions)
