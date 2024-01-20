@@ -13,8 +13,8 @@
 ### Installation
 
 1. Cloner le projet
-2. Crée un environnement virtuel avec la commande `python -m venv env`
-3. Activer l'environnement virtuel avec la commande `source env/bin/activate`
+2. Crée un environnement virtuel avec la commande `python3 -m venv venv`
+3. Activer l'environnement virtuel avec la commande `source venv/bin/activate`
 4. Installer les dépendances avec la commande `pip install -r requirements.txt`
 5. Configurer Tkinter avec la commande `sudo apt-get install python3-tk`
 
@@ -47,11 +47,19 @@
                 2,
                 3
             ], 
-            "nb_points" : 2
+            "nb_points" : 2,
+            "type": 1
         }
     ]
 }
 ```
+
+- `titre` : Titre de la question
+- `question` : Question
+- `answers` : Réponses possibles
+- `correct` : Réponses correctes
+- `nb_points` : Nombre de points de la question
+- `type` : Type de la question (1 = QCM, 2 = Matching)
 
 ### Auteurs
 

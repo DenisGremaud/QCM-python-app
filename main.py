@@ -2,14 +2,19 @@ import PySimpleGUI as sg
 import json
 import textwrap
 import sys
+from enum import Enum
 
-def create_question_window(titre, question, answers, nb_points_by_question):
+class TypeQuestion(Enum):
+    QCM = 1
+    MATCHING = 2
+
+def create_question_window_qcm(titre, question, answers, nb_points_by_question):
     layout = [
         [sg.Text(titre, size=(40, 1), justification='left', font=("Helvetica", 35))],
         qcm_question_responsiveness(question),
         qcm_answers(answers),
         [sg.Text(f"Points: {nb_points_by_question}", size=(40, 1), justification='left', font=("Helvetica", 15), pad=(0, 10))],
-        [sg.Button('Exit', size=(20, 2)), sg.Button('Next', size=(20, 2))]
+        [sg.Button('Next', size=(20, 2)), sg.Button('Exit', size=(20, 2))]
     ]
 
     return sg.Window('QCM', layout, finalize=True,auto_size_text=True)
@@ -68,8 +73,10 @@ def create_result_window_with_resume_button(questions, user_answers, score, nb_p
 
 def game(questions):
     user_answer = []
+    window = None
     for question in questions:
-        window = create_question_window(question["titre"], question["question"], question["answers"], question["nb_points"])
+        if question["type"] == TypeQuestion.QCM.value:
+            window = create_question_window_qcm(question["titre"], question["question"], question["answers"], question["nb_points"])
         while True:
             event, values = window.read()
 
