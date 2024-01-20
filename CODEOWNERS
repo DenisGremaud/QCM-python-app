@@ -1,0 +1,5 @@
+# Ce fichier est le CODEOWNERS.
+# L'owner du dépôt doit approuver tout changement.
+
+# L'owner sera demandé pour réviser tout changement dans le dépôt.
+*       @DenisGremaud
