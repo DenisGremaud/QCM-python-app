@@ -37,19 +37,16 @@
         {
             "titre": "Question 1",
             "question": "Exemple de question 1",
-            // Les réponses sont les choix possibles
             "answers": [
                 "Réponse 1",
                 "Réponse 2",
                 "Réponse 3",
                 "Réponse 4"
             ], 
-            // Les réponses correctes sont les index des réponses correctes
             "correct": [
                 2,
                 3
             ], 
-            // Le nombre de points est le nombre de points que rapporte la question
             "nb_points" : 2
         }
     ]
